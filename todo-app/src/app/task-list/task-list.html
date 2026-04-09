@@ -1,0 +1,20 @@
+<ul>
+  <li *ngFor="let task of taskService.tasks">
+
+    <span *ngIf="editingId !== task.id">
+      {{ task.name }}
+    </span>
+
+    <input 
+      *ngIf="editingId === task.id" 
+      [(ngModel)]="editedName" 
+    />
+
+    <div>
+      <button *ngIf="editingId !== task.id" (click)="startEdit(task)">Edit</button>
+      <button *ngIf="editingId === task.id" (click)="saveEdit(task.id)">Save</button>
+      <button (click)="deleteTask(task.id)">Delete</button>
+    </div>
+
+  </li>
+</ul>

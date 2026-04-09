@@ -1,0 +1,43 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f4f4f4;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  align-items: center;
+}
+
+input {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:nth-child(1) {
+  background-color: orange;
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: green;
+  color: white;
+}
+
+button:nth-child(3) {
+  background-color: red;
+  color: white;
+}
